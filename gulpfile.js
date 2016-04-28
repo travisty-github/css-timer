@@ -4,7 +4,12 @@ var sass = require('gulp-sass');
 
 // Set up BroswerSync
 gulp.task('browserSync', function() {
-  browserSync.init({});
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: './'
+    }
+  });
 });
 
 // Compile SASS
