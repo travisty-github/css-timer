@@ -1,0 +1,67 @@
+@import 'animation';
+
+$pixel-width: 80px;
+$pixel-height: 20px;
+$margin-left: 30px;
+
+pixel {
+  width: $pixel-width;
+  height: $pixel-height;
+  position: absolute;
+  background: blue;
+}
+
+_verticalPixel {
+  @extend pixel;
+  width: $pixel-height;
+  height: $pixel-width;
+}
+
+verticalPixelLeft {
+  @extend _verticalPixel;
+  margin-left: $margin-left - $pixel-height;
+}
+
+verticalPixelRight {
+  @extend _verticalPixel;
+  margin-left: $margin-left + $pixel-width;
+}
+
+horizontalPixel {
+  @extend pixel;
+  margin-left: $margin-left;
+}
+
+#p0 {
+  @extend horizontalPixel;
+}
+
+#p1 {
+  @extend verticalPixelLeft;
+  margin-top: $pixel-height;
+}
+
+#p2 {
+  @extend verticalPixelRight;
+  margin-top: $pixel-height;
+}
+
+#p3 {
+  @extend horizontalPixel;
+  margin-top: $pixel-width + $pixel-height;
+}
+
+#p4 {
+  @extend verticalPixelLeft;
+  margin-top: $pixel-width + 2 * $pixel-height;
+}
+
+#p5 {
+  @extend verticalPixelRight;
+  margin-top: $pixel-width + 2 * $pixel-height;
+}
+
+#p6 {
+  @extend horizontalPixel;
+  margin-top: 2 * $pixel-width + 2 * $pixel-height;
+}
