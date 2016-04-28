@@ -1,8 +1,22 @@
+.clock {
+  margin-right: auto;
+  margin-left: auto;
+  width: 20%;
+  height: 200px;
+}
+
+
 $spacing: 100px;
 
 #seconds {
-    margin-left: 500px;
+    margin-left: 600px;
 }
-#minutes {}
-#hours10 {}
-#hours100 {}
+#tensseconds {
+  margin-left: 400px;
+}
+#minutes {
+  margin-left: 200px;
+}
+#tensminutes {
+  margin-left: 0px;
+}

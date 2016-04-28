@@ -1,5 +1,23 @@
+$clockspeed: 1;
+
 $off: lightgrey;
 $on: red;
+
+secondsAnimation {
+  animation-duration: 10s / $clockspeed;
+}
+
+tenssecondsAnimation {
+  animation-duration: 60s / $clockspeed;
+}
+
+minutesAnimation {
+  animation-duration: 600s / $clockspeed;
+}
+
+tensminutesAnimation {
+  animation-duration: 3600s / $clockspeed;
+}
 
 // Animation for digits counting 0 - 10
 @keyframes tenp0 {
