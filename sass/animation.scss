@@ -1,8 +1,97 @@
-@keyframes p00 {
-  from {
-    background: gray;
-  }
-  to {
-    background: blue;
-  }
+$off: lightgrey;
+$on: red;
+
+@keyframes p0 {
+    05% { background-color: $on }
+    15% { background-color: $off }
+    25% { background-color: $on }
+    35% { background-color: $on }
+    45% { background-color: $off }
+    55% { background-color: $on }
+    65% { background-color: $on }
+    75% { background-color: $on }
+    85% { background-color: $on }
+    95% { background-color: $on }
+}
+
+@keyframes p1 {
+    05% { background-color: $on }
+    15% { background-color: $off }
+    25% { background-color: $off }
+    35% { background-color: $off }
+    45% { background-color: $on }
+    55% { background-color: $on }
+    65% { background-color: $on }
+    75% { background-color: $off }
+    85% { background-color: $on }
+    95% { background-color: $on }
+}
+
+@keyframes p2 {
+    05% { background-color: $on }
+    15% { background-color: $on }
+    25% { background-color: $on }
+    35% { background-color: $on }
+    45% { background-color: $on }
+    55% { background-color: $off }
+    65% { background-color: $off }
+    75% { background-color: $on }
+    85% { background-color: $on }
+    95% { background-color: $on }
+}
+
+@keyframes p3 {
+    00% { background-color: $off }
+    05% { background-color: $off }
+    15% { background-color: $off }
+    25% { background-color: $on }
+    35% { background-color: $on }
+    45% { background-color: $on }
+    55% { background-color: $on }
+    65% { background-color: $on }
+    75% { background-color: $off }
+    85% { background-color: $on }
+    95% { background-color: $on }
+}
+
+@keyframes p4 {
+    00% { background-color: $on }
+    05% { background-color: $on }
+    15% { background-color: $off }
+    25% { background-color: $on }
+    35% { background-color: $off }
+    45% { background-color: $off }
+    55% { background-color: $off }
+    65% { background-color: $on }
+    75% { background-color: $off }
+    85% { background-color: $on }
+    95% { background-color: $off }
+}
+
+@keyframes p5 {
+    00% { background-color: $on }
+    05% { background-color: $on }
+    15% { background-color: $on }
+    25% { background-color: $off }
+    35% { background-color: $on }
+    45% { background-color: $on }
+    55% { background-color: $on }
+    65% { background-color: $on }
+    75% { background-color: $on }
+    85% { background-color: $on }
+    95% { background-color: $on }
+}
+
+@keyframes p6 {
+    00% { background-color: $on }
+    05% { background-color: $on }
+    15% { background-color: $off }
+    25% { background-color: $on }
+    35% { background-color: $on }
+    45% { background-color: $off }
+    55% { background-color: $on }
+    65% { background-color: $on }
+    75% { background-color: $off }
+    85% { background-color: $on }
+    95% { background-color: $on }
 }

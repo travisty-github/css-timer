@@ -8,7 +8,9 @@ pixel {
   width: $pixel-width;
   height: $pixel-height;
   position: absolute;
-  background: blue;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  // background-color: $off;
 }
 
 _verticalPixel {
@@ -34,34 +36,41 @@ horizontalPixel {
 
 #p0 {
   @extend horizontalPixel;
+  animation-name: p0;
 }
 
 #p1 {
   @extend verticalPixelLeft;
   margin-top: $pixel-height;
+  animation-name: p1;
 }
 
 #p2 {
   @extend verticalPixelRight;
   margin-top: $pixel-height;
+  animation-name: p2;
 }
 
 #p3 {
   @extend horizontalPixel;
   margin-top: $pixel-width + $pixel-height;
+  animation-name: p3;
 }
 
 #p4 {
   @extend verticalPixelLeft;
   margin-top: $pixel-width + 2 * $pixel-height;
+  animation-name: p4;
 }
 
 #p5 {
   @extend verticalPixelRight;
   margin-top: $pixel-width + 2 * $pixel-height;
+  animation-name: p5;
 }
 
 #p6 {
   @extend horizontalPixel;
   margin-top: 2 * $pixel-width + 2 * $pixel-height;
+  animation-name: p6;
 }
