@@ -1,10 +1,6 @@
 @import 'animation';
 @import 'positions';
 
-$segment-width: 80px;
-$segment-height: 20px;
-$margin-left: 30px;
-
 segment {
   width: $segment-width;
   height: $segment-height;
