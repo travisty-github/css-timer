@@ -1,97 +1,172 @@
 $off: lightgrey;
 $on: red;
 
-@keyframes p0 {
-    05% { background-color: $on }
-    15% { background-color: $off }
-    25% { background-color: $on }
-    35% { background-color: $on }
-    45% { background-color: $off }
-    55% { background-color: $on }
-    65% { background-color: $on }
-    75% { background-color: $on }
-    85% { background-color: $on }
-    95% { background-color: $on }
+// Animation for digits counting 0 - 10
+@keyframes tenp0 {
+    00% { background-color: $on }
+    10% { background-color: $off }
+    20% { background-color: $on }
+    30% { background-color: $on }
+    40% { background-color: $off }
+    50% { background-color: $on }
+    60% { background-color: $on }
+    70% { background-color: $on }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $on }
 }
 
-@keyframes p1 {
-    05% { background-color: $on }
-    15% { background-color: $off }
-    25% { background-color: $off }
-    35% { background-color: $off }
-    45% { background-color: $on }
-    55% { background-color: $on }
-    65% { background-color: $on }
-    75% { background-color: $off }
-    85% { background-color: $on }
-    95% { background-color: $on }
+@keyframes tenp1 {
+    00% { background-color: $on }
+    10% { background-color: $off }
+    20% { background-color: $off }
+    30% { background-color: $off }
+    40% { background-color: $on }
+    50% { background-color: $on }
+    60% { background-color: $on }
+    70% { background-color: $off }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $on }
 }
 
-@keyframes p2 {
-    05% { background-color: $on }
-    15% { background-color: $on }
-    25% { background-color: $on }
-    35% { background-color: $on }
-    45% { background-color: $on }
-    55% { background-color: $off }
-    65% { background-color: $off }
-    75% { background-color: $on }
-    85% { background-color: $on }
-    95% { background-color: $on }
+@keyframes tenp2 {
+    00% { background-color: $on }
+    10% { background-color: $on }
+    20% { background-color: $on }
+    30% { background-color: $on }
+    40% { background-color: $on }
+    50% { background-color: $off }
+    60% { background-color: $off }
+    70% { background-color: $on }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $on }
 }
 
-@keyframes p3 {
+@keyframes tenp3 {
     00% { background-color: $off }
-    05% { background-color: $off }
-    15% { background-color: $off }
-    25% { background-color: $on }
-    35% { background-color: $on }
-    45% { background-color: $on }
-    55% { background-color: $on }
-    65% { background-color: $on }
-    75% { background-color: $off }
-    85% { background-color: $on }
-    95% { background-color: $on }
+    10% { background-color: $off }
+    20% { background-color: $on }
+    30% { background-color: $on }
+    40% { background-color: $on }
+    50% { background-color: $on }
+    60% { background-color: $on }
+    70% { background-color: $off }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $off }
 }
 
-@keyframes p4 {
+@keyframes tenp4 {
     00% { background-color: $on }
-    05% { background-color: $on }
-    15% { background-color: $off }
-    25% { background-color: $on }
-    35% { background-color: $off }
-    45% { background-color: $off }
-    55% { background-color: $off }
-    65% { background-color: $on }
-    75% { background-color: $off }
-    85% { background-color: $on }
-    95% { background-color: $off }
+    10% { background-color: $off }
+    20% { background-color: $on }
+    30% { background-color: $off }
+    40% { background-color: $off }
+    50% { background-color: $off }
+    60% { background-color: $on }
+    70% { background-color: $off }
+    80% { background-color: $on }
+    90% { background-color: $off }
+    100% { background-color: $on }
 }
 
-@keyframes p5 {
+@keyframes tenp5 {
     00% { background-color: $on }
-    05% { background-color: $on }
-    15% { background-color: $on }
-    25% { background-color: $off }
-    35% { background-color: $on }
-    45% { background-color: $on }
-    55% { background-color: $on }
-    65% { background-color: $on }
-    75% { background-color: $on }
-    85% { background-color: $on }
-    95% { background-color: $on }
+    10% { background-color: $on }
+    20% { background-color: $off }
+    30% { background-color: $on }
+    40% { background-color: $on }
+    50% { background-color: $on }
+    60% { background-color: $on }
+    70% { background-color: $on }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $on }
 }
 
-@keyframes p6 {
+@keyframes tenp6 {
     00% { background-color: $on }
-    05% { background-color: $on }
-    15% { background-color: $off }
-    25% { background-color: $on }
-    35% { background-color: $on }
-    45% { background-color: $off }
-    55% { background-color: $on }
-    65% { background-color: $on }
-    75% { background-color: $off }
-    85% { background-color: $on }
-    95% { background-color: $on }
+    10% { background-color: $off }
+    20% { background-color: $on }
+    30% { background-color: $on }
+    40% { background-color: $off }
+    50% { background-color: $on }
+    60% { background-color: $on }
+    70% { background-color: $off }
+    80% { background-color: $on }
+    90% { background-color: $on }
+    100% { background-color: $on }
+}
+
+// Animation for digits counting 0 - 5
+@keyframes sixp0 {
+    00% { background-color: $on }
+    16.67% { background-color: $off }
+    33.33% { background-color: $on }
+    83.33% { background-color: $on }
+    66.67% { background-color: $off }
+    83.33% { background-color: $on }
+    100% { background-color: $on }
+}
+
+@keyframes sixp1 {
+    00% { background-color: $on }
+    16.67% { background-color: $off }
+    33.33% { background-color: $off }
+    83.33% { background-color: $off }
+    66.67% { background-color: $on }
+    83.33% { background-color: $on }
+    100% { background-color: $on }
+}
+
+@keyframes sixp2 {
+    00% { background-color: $on }
+    16.67% { background-color: $on }
+    33.33% { background-color: $on }
+    83.33% { background-color: $on }
+    66.67% { background-color: $on }
+    83.33% { background-color: $off }
+    100% { background-color: $off }
+}
+
+@keyframes sixp3 {
+    00% { background-color: $off }
+    16.67% { background-color: $off }
+    33.33% { background-color: $on }
+    83.33% { background-color: $on }
+    66.67% { background-color: $on }
+    83.33% { background-color: $on }
+    100% { background-color: $on }
+}
+
+@keyframes sixp4 {
+    00% { background-color: $on }
+    16.67% { background-color: $off }
+    33.33% { background-color: $on }
+    83.33% { background-color: $off }
+    66.67% { background-color: $off }
+    83.33% { background-color: $off }
+    100% { background-color: $off }
+}
+
+@keyframes sixp5 {
+    00% { background-color: $on }
+    16.67% { background-color: $on }
+    33.33% { background-color: $off }
+    83.33% { background-color: $on }
+    66.67% { background-color: $on }
+    83.33% { background-color: $on }
+    100% { background-color: $on }
+}
+
+@keyframes sixp6 {
+    00% { background-color: $on }
+    16.67% { background-color: $off }
+    33.33% { background-color: $on }
+    83.33% { background-color: $on }
+    66.67% { background-color: $off }
+    83.33% { background-color: $on }
+    100% { background-color: $on }
 }
