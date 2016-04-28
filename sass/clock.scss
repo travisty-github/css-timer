@@ -1,232 +1,232 @@
 @import 'animation';
 @import 'positions';
 
-$pixel-width: 80px;
-$pixel-height: 20px;
+$segment-width: 80px;
+$segment-height: 20px;
 $margin-left: 30px;
 
-pixel {
-  width: $pixel-width;
-  height: $pixel-height;
+segment {
+  width: $segment-width;
+  height: $segment-height;
   position: absolute;
   animation-iteration-count: infinite;
   animation-timing-function: step-end;
 }
 
-_verticalPixel {
-  @extend pixel;
-  width: $pixel-height;
-  height: $pixel-width;
+_verticalSegment {
+  @extend segment;
+  width: $segment-height;
+  height: $segment-width;
 }
 
-verticalPixelLeft {
-  @extend _verticalPixel;
-  margin-left: $margin-left - $pixel-height;
+verticalSegmentLeft {
+  @extend _verticalSegment;
+  margin-left: $margin-left - $segment-height;
 }
 
-verticalPixelRight {
-  @extend _verticalPixel;
-  margin-left: $margin-left + $pixel-width;
+verticalSegmentRight {
+  @extend _verticalSegment;
+  margin-left: $margin-left + $segment-width;
 }
 
-horizontalPixel {
-  @extend pixel;
+horizontalSegment {
+  @extend segment;
   margin-left: $margin-left;
 }
 
 #seconds_p0 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend secondsAnimation;
   animation-name: tenp0;
 }
 
 #seconds_p1 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend secondsAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: tenp1;
 }
 
 #seconds_p2 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend secondsAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: tenp2;
 }
 
 #seconds_p3 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend secondsAnimation;
-  margin-top: $pixel-width + $pixel-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
 
 #seconds_p4 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend secondsAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: tenp4;
 }
 
 #seconds_p5 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend secondsAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: tenp5;
 }
 
 #seconds_p6 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend secondsAnimation;
-  margin-top: 2 * $pixel-width + 2 * $pixel-height;
+  margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: tenp6;
 }
 
 
 // Tens of seconds
 #tensseconds_p0 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tenssecondsAnimation;
   animation-name: sixp0;
 }
 
 #tensseconds_p1 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend tenssecondsAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: sixp1;
 }
 
 #tensseconds_p2 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend tenssecondsAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: sixp2;
 }
 
 #tensseconds_p3 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tenssecondsAnimation;
-  margin-top: $pixel-width + $pixel-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: sixp3;
 }
 
 #tensseconds_p4 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend tenssecondsAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: sixp4;
 }
 
 #tensseconds_p5 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend tenssecondsAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: sixp5;
 }
 
 #tensseconds_p6 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tenssecondsAnimation;
-  margin-top: 2 * $pixel-width + 2 * $pixel-height;
+  margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: sixp6;
 }
 
 // Minutes
 #minutes_p0 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend minutesAnimation;
   animation-name: tenp0;
 }
 
 #minutes_p1 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend minutesAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: tenp1;
 }
 
 #minutes_p2 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend minutesAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: tenp2;
 }
 
 #minutes_p3 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend minutesAnimation;
-  margin-top: $pixel-width + $pixel-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
 
 #minutes_p4 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend minutesAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: tenp4;
 }
 
 #minutes_p5 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend minutesAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: tenp5;
 }
 
 #minutes_p6 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend minutesAnimation;
-  margin-top: 2 * $pixel-width + 2 * $pixel-height;
+  margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: tenp6;
 }
 
 
 // Tens of tensminutes
 #tensminutes_p0 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tensminutesAnimation;
   animation-name: sixp0;
 }
 
 #tensminutes_p1 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend tensminutesAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: sixp1;
 }
 
 #tensminutes_p2 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend tensminutesAnimation;
-  margin-top: $pixel-height;
+  margin-top: $segment-height;
   animation-name: sixp2;
 }
 
 #tensminutes_p3 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tensminutesAnimation;
-  margin-top: $pixel-width + $pixel-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: sixp3;
 }
 
 #tensminutes_p4 {
-  @extend verticalPixelLeft;
+  @extend verticalSegmentLeft;
   @extend tensminutesAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: sixp4;
 }
 
 #tensminutes_p5 {
-  @extend verticalPixelRight;
+  @extend verticalSegmentRight;
   @extend tensminutesAnimation;
-  margin-top: $pixel-width + 2 * $pixel-height;
+  margin-top: $segment-width + 2 * $segment-height;
   animation-name: sixp5;
 }
 
 #tensminutes_p6 {
-  @extend horizontalPixel;
+  @extend horizontalSegment;
   @extend tensminutesAnimation;
-  margin-top: 2 * $pixel-width + 2 * $pixel-height;
+  margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: sixp6;
 }
