@@ -22,5 +22,5 @@ gulp.task('sass', function() {
 // Watch SASS folder and index.html for changes and then reload.
 gulp.task('watch', ['browserSync'], function() {
   gulp.watch('./sass/**/*.scss', ['sass', browserSync.reload]);
-  gulp.watch('./index.html', browserSync.reload());
+  gulp.watch('index.html', browserSync.reload);
 });
