@@ -14,7 +14,6 @@
 
   For example, p4 is the lower left segment and p0 is the top centre segment.
 */
-
 segment {
   width: $segment-width;
   height: $segment-height;
@@ -22,7 +21,6 @@ segment {
   animation-iteration-count: infinite;
   animation-timing-function: step-end;
 }
-
 
 // Due to rotating the container for vertical elements, vertical and horizontal
 // directions are swapped.
@@ -582,4 +580,27 @@ pointyEndRight {
   @extend tensminutesAnimation;
   @extend pointyEndRight;
   animation-name: sixp6;
+}
+
+
+$circles-spacing: 10px;
+$circle-diameter: 30px;
+$circle-vertical-space: 20px;
+circle {
+  position: absolute;
+  width: $circle-diameter;
+  height: $circle-diameter;
+  border-radius: 100%;
+  background: $on;
+}
+
+#circles {
+  @extend circle;
+  bottom: $circle-vertical-space;
+  left: -1 * $circle-diameter / 2;
+}
+#circles::before {
+  @extend circle;
+  content: "";
+  top: $circle-vertical-space * 2 + $circle-diameter;
 }

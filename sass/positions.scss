@@ -19,6 +19,8 @@ $digit-top-margin: -1 * ($segment-width + 1.5 * $segment-height);
   top: 50%;
   bottom: 50%;
   margin-left: 50%;
+  width: 1px;
+  height: 1px;
 }
 
 #seconds {
