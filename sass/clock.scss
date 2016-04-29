@@ -318,10 +318,23 @@ pointyEndRight {
   @extend pointyEndRight;
   animation-name: sixp6;
 }
+
 // Minutes
 #minutes_p0 {
   @extend horizontalSegment;
   @extend minutesAnimation;
+  animation-name: tenp0;
+}
+#minutes_p0::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp0;
+}
+#minutes_p0::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
   animation-name: tenp0;
 }
 
@@ -330,10 +343,34 @@ pointyEndRight {
   @extend minutesAnimation;
   animation-name: tenp1;
 }
+#minutes_p1::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp1;
+}
+#minutes_p1::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp1;
+}
 
 #minutes_p2 {
   @extend verticalSegmentRight;
   @extend minutesAnimation;
+  animation-name: tenp2;
+}
+#minutes_p2::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp2;
+}
+#minutes_p2::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
   animation-name: tenp2;
 }
 
@@ -343,11 +380,35 @@ pointyEndRight {
   margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
+#minutes_p3::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp3;
+}
+#minutes_p3::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp3;
+}
 
 #minutes_p4 {
   @extend verticalSegmentLeft;
   @extend minutesAnimation;
   margin-top: $segment-width + $segment-height;
+  animation-name: tenp4;
+}
+#minutes_p4::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp4;
+}
+#minutes_p4::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
   animation-name: tenp4;
 }
 
@@ -357,11 +418,35 @@ pointyEndRight {
   margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
+#minutes_p5::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp5;
+}
+#minutes_p5::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp5;
+}
 
 #minutes_p6 {
   @extend horizontalSegment;
   @extend minutesAnimation;
   margin-top: 2 * $segment-width + 2 * $segment-height;
+  animation-name: tenp6;
+}
+#minutes_p6::before{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp6;
+}
+#minutes_p6::after{
+  @extend segment;
+  @extend minutesAnimation;
+  @extend pointyEndRight;
   animation-name: tenp6;
 }
 
