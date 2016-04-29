@@ -17,17 +17,17 @@ _verticalSegment {
 
 verticalSegmentLeft {
   @extend _verticalSegment;
-  margin-left: $margin-left - $segment-height;
+  margin-left: 0px;
 }
 
 verticalSegmentRight {
   @extend _verticalSegment;
-  margin-left: $margin-left + $segment-width;
+  margin-left: $segment-width + $segment-height;
 }
 
 horizontalSegment {
   @extend segment;
-  margin-left: $margin-left;
+  margin-left: $segment-height;
 }
 
 #seconds_p0 {
