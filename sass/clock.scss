@@ -39,12 +39,14 @@ pointyEnd {
 
 pointyEndLeft {
   @extend pointyEnd;
-  transform: translate(-7px, 3px) rotate(45deg);
+  transform-origin: 0% 0%;
+  transform: rotate(45deg);
 }
 
 pointyEndRight {
   @extend pointyEnd;
-  transform: translate($segment-width - $segment-height / 2 + 3, 3px) rotate(45deg);
+  transform-origin: 0% 0%;
+  transform: translate($segment-width, 0px) rotate(45deg);
 }
 
 #seconds_p0 {
