@@ -35,6 +35,26 @@ horizontalSegment {
   @extend secondsAnimation;
   animation-name: tenp0;
 }
+#seconds_p0::before{
+  @extend segment;
+  content: "";
+  width: $segment-height / 1.414;
+  height: $segment-height / 1.414;
+  transform: translate(-7px, 3px) rotate(45deg);
+  @extend secondsAnimation;
+  animation-name: tenp0;
+  z-index: -1;
+}
+#seconds_p0::after{
+  @extend segment;
+  content: "";
+  width: $segment-height / 1.414;
+  height: $segment-height / 1.414;
+  transform: translate($segment-width - $segment-height / 2 + 3, 3px) rotate(45deg);
+  @extend secondsAnimation;
+  animation-name: tenp0;
+  z-index: -1;
+}
 
 #seconds_p1 {
   @extend verticalSegmentLeft;
