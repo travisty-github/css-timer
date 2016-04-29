@@ -11,22 +11,29 @@ $digit-spacing: $segment-height * 2;
 // The space to separate each group of digits (i.e. minutes and seconds)
 $separate-digit-groups: $segment-height * 2;
 
+// Half the height of the digit. Used to centre vertical position.
+$digit-top-margin: -1 * ($segment-width + 1.5 * $segment-height);
+
 .clock {
-  margin-right: auto;
-  margin-left: auto;
-  width: 1px;
-  height: 200px;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  margin-left: 50%;
 }
 
 #seconds {
-    margin-left: $digit-spacing + $digit-width + $separate-digit-groups;
+  margin-top: $digit-top-margin;
+  margin-left: $digit-spacing + $digit-width + $separate-digit-groups;
 }
 #tensseconds {
+  margin-top: $digit-top-margin;
   margin-left: $separate-digit-groups;
 }
 #minutes {
+  margin-top: $digit-top-margin;
   margin-left: $digit-width * -1 - $separate-digit-groups;
 }
 #tensminutes {
+  margin-top: $digit-top-margin;
   margin-left: $digit-spacing * -1 + $digit-width * -2 - $separate-digit-groups;
 }
