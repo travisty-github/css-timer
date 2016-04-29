@@ -1,26 +1,25 @@
 $segment-width: 80px;
 $segment-height: 20px;
-$margin-left: 30px;
+$segment-tapered-end: $segment-width / 10;
+$separate-digit-groups: $segment-height * 2;
+$spacing: $segment-width + 2 * $segment-height * 2;
 
 .clock {
   margin-right: auto;
   margin-left: auto;
-  width: 20%;
+  width: 1px;
   height: 200px;
 }
 
-
-$spacing: 100px;
-
 #seconds {
-    margin-left: 600px;
+    margin-left: $spacing + $separate-digit-groups;
 }
 #tensseconds {
-  margin-left: 400px;
+  margin-left: $separate-digit-groups;
 }
 #minutes {
-  margin-left: 200px;
+  margin-left: $spacing * -1 - $separate-digit-groups;
 }
 #tensminutes {
-  margin-left: 0px;
+  margin-left: $spacing * -2 - $separate-digit-groups;
 }
