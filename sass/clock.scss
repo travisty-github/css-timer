@@ -30,6 +30,23 @@ horizontalSegment {
   margin-left: $segment-height;
 }
 
+pointyEnd {
+  content: "";
+  width: $segment-height / 1.414;
+  height: $segment-height / 1.414;
+  z-index: -1;
+}
+
+pointyEndLeft {
+  @extend pointyEnd;
+  transform: translate(-7px, 3px) rotate(45deg);
+}
+
+pointyEndRight {
+  @extend pointyEnd;
+  transform: translate($segment-width - $segment-height / 2 + 3, 3px) rotate(45deg);
+}
+
 #seconds_p0 {
   @extend horizontalSegment;
   @extend secondsAnimation;
@@ -37,23 +54,15 @@ horizontalSegment {
 }
 #seconds_p0::before{
   @extend segment;
-  content: "";
-  width: $segment-height / 1.414;
-  height: $segment-height / 1.414;
-  transform: translate(-7px, 3px) rotate(45deg);
   @extend secondsAnimation;
+  @extend pointyEndLeft;
   animation-name: tenp0;
-  z-index: -1;
 }
 #seconds_p0::after{
   @extend segment;
-  content: "";
-  width: $segment-height / 1.414;
-  height: $segment-height / 1.414;
-  transform: translate($segment-width - $segment-height / 2 + 3, 3px) rotate(45deg);
   @extend secondsAnimation;
+  @extend pointyEndRight;
   animation-name: tenp0;
-  z-index: -1;
 }
 
 #seconds_p1 {
