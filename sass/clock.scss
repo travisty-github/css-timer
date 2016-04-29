@@ -1,6 +1,20 @@
 @import 'animation';
 @import 'positions';
 
+/* Digit segment position codes:
+
+      0
+    ______
+   |     |
+1  |  2  |  3
+   |-----|
+4  |     |  5
+   |_____|
+      6
+
+  For example, p4 is the lower left segment and p0 is the top centre segment.
+*/
+
 segment {
   width: $segment-width;
   height: $segment-height;
