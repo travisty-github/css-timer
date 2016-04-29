@@ -1,8 +1,15 @@
+// Width and height of each digit segment
 $segment-width: 80px;
 $segment-height: 20px;
-$segment-tapered-end: $segment-width / 10;
+
+// The total width of each digit
+$digit-width: $segment-width + 2 * $segment-height;
+
+// The space between each digit
+$digit-spacing: $segment-height * 2;
+
+// The space to separate each group of digits (i.e. minutes and seconds)
 $separate-digit-groups: $segment-height * 2;
-$spacing: $segment-width + 2 * $segment-height * 2;
 
 .clock {
   margin-right: auto;
@@ -12,14 +19,14 @@ $spacing: $segment-width + 2 * $segment-height * 2;
 }
 
 #seconds {
-    margin-left: $spacing + $separate-digit-groups;
+    margin-left: $digit-spacing + $digit-width + $separate-digit-groups;
 }
 #tensseconds {
   margin-left: $separate-digit-groups;
 }
 #minutes {
-  margin-left: $spacing * -1 - $separate-digit-groups;
+  margin-left: $digit-width * -1 - $separate-digit-groups;
 }
 #tensminutes {
-  margin-left: $spacing * -2 - $separate-digit-groups;
+  margin-left: $digit-spacing * -1 + $digit-width * -2 - $separate-digit-groups;
 }
