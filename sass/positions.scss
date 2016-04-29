@@ -37,3 +37,14 @@ $digit-top-margin: -1 * ($segment-width + 1.5 * $segment-height);
   margin-top: $digit-top-margin;
   margin-left: $digit-spacing * -1 + $digit-width * -2 - $separate-digit-groups;
 }
+
+// The more eloquent way to do this would be to rotate the segment itself.
+// Unfortunately this creates a new transform context and then the
+// pointy ends cannot have their z-index below the bar part of the segment.
+// This solution works but makes setting the margins a bit mind bending
+// as it is all 90 degrees out so a vertical margin becomes a horiztonal
+// direction....
+.verticalContainer {
+  transform-origin: 0% 50%;
+  transform: translate($segment-width + 2 * $segment-height, $segment-height) rotate(90deg);
+}
