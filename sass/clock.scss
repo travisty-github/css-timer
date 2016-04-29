@@ -72,10 +72,34 @@ pointyEndRight {
   @extend secondsAnimation;
   animation-name: tenp1;
 }
+#seconds_p1::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp1;
+}
+#seconds_p1::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp1;
+}
 
 #seconds_p2 {
   @extend verticalSegmentRight;
   @extend secondsAnimation;
+  animation-name: tenp2;
+}
+#seconds_p2::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp2;
+}
+#seconds_p2::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
   animation-name: tenp2;
 }
 
@@ -85,11 +109,35 @@ pointyEndRight {
   margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
+#seconds_p3::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp3;
+}
+#seconds_p3::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp3;
+}
 
 #seconds_p4 {
   @extend verticalSegmentLeft;
   @extend secondsAnimation;
   margin-top: $segment-width + $segment-height;
+  animation-name: tenp4;
+}
+#seconds_p4::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp4;
+}
+#seconds_p4::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
   animation-name: tenp4;
 }
 
@@ -99,11 +147,35 @@ pointyEndRight {
   margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
+#seconds_p5::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp5;
+}
+#seconds_p5::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
+  animation-name: tenp5;
+}
 
 #seconds_p6 {
   @extend horizontalSegment;
   @extend secondsAnimation;
   margin-top: 2 * $segment-width + 2 * $segment-height;
+  animation-name: tenp6;
+}
+#seconds_p6::before{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndLeft;
+  animation-name: tenp6;
+}
+#seconds_p6::after{
+  @extend segment;
+  @extend secondsAnimation;
+  @extend pointyEndRight;
   animation-name: tenp6;
 }
 
