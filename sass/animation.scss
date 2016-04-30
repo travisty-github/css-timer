@@ -3,23 +3,24 @@ $clockspeed: 1;
 $on: #84ff43;
 $off: #f6f6f6;
 
-secondsAnimation {
+// Define duratinos for each digit.
+secondsAnimationDuration {
   animation-duration: 10s / $clockspeed;
 }
 
-tenssecondsAnimation {
+tenssecondsAnimationDuration {
   animation-duration: 60s / $clockspeed;
 }
 
-minutesAnimation {
+minutesAnimationDuration {
   animation-duration: 600s / $clockspeed;
 }
 
-tensminutesAnimation {
+tensminutesAnimationDuration {
   animation-duration: 3600s / $clockspeed;
 }
 
-// Animation for digits counting 0 - 10
+// AnimationDuration for digits counting 0 - 10
 @keyframes tenp0 {
     00% { background: $on }
     10% { background: $off }
@@ -118,7 +119,7 @@ tensminutesAnimation {
     100% { background: $on }
 }
 
-// Animation for digits counting 0 - 5
+// AnimationDuration for digits counting 0 - 5
 @keyframes sixp0 {
     00% { background: $on }
     16.67% { background: $off }

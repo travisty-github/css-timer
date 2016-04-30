@@ -64,130 +64,130 @@ pointyEndRight {
 
 #seconds_p0 {
   @extend horizontalSegment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   animation-name: tenp0;
 }
 #seconds_p0::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp0;
 }
 #seconds_p0::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp0;
 }
 
 #seconds_p1 {
   @extend verticalSegmentLeft;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   animation-name: tenp1;
 }
 #seconds_p1::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp1;
 }
 #seconds_p1::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp1;
 }
 
 #seconds_p2 {
   @extend verticalSegmentRight;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   animation-name: tenp2;
 }
 #seconds_p2::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp2;
 }
 #seconds_p2::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp2;
 }
 
 #seconds_p3 {
   @extend horizontalSegment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
 #seconds_p3::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp3;
 }
 #seconds_p3::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp3;
 }
 
 #seconds_p4 {
   @extend verticalSegmentLeft;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp4;
 }
 #seconds_p4::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp4;
 }
 #seconds_p4::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp4;
 }
 
 #seconds_p5 {
   @extend verticalSegmentRight;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
 #seconds_p5::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp5;
 }
 #seconds_p5::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp5;
 }
 
 #seconds_p6 {
   @extend horizontalSegment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: tenp6;
 }
 #seconds_p6::before{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp6;
 }
 #seconds_p6::after{
   @extend segment;
-  @extend secondsAnimation;
+  @extend secondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp6;
 }
@@ -196,124 +196,124 @@ pointyEndRight {
 // Tens of seconds
 #tensseconds_p0 {
   @extend horizontalSegment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   animation-name: sixp0;
 }
 #tensseconds_p0::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp0;
 }
 #tensseconds_p0::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp0;
 }
 #tensseconds_p1 {
   @extend verticalSegmentLeft;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   animation-name: sixp1;
 }
 #tensseconds_p1::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp1;
 }
 #tensseconds_p1::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp1;
 }
 #tensseconds_p2 {
   @extend verticalSegmentRight;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   animation-name: sixp2;
 }
 #tensseconds_p2::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp2;
 }
 #tensseconds_p2::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp2;
 }
 #tensseconds_p3 {
   @extend horizontalSegment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp3;
 }
 #tensseconds_p3::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp3;
 }
 #tensseconds_p3::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp3;
 }
 #tensseconds_p4 {
   @extend verticalSegmentLeft;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp4;
 }
 #tensseconds_p4::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp4;
 }
 #tensseconds_p4::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp4;
 }
 #tensseconds_p5 {
   @extend verticalSegmentRight;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp5;
 }
 #tensseconds_p5::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp5;
 }
 #tensseconds_p5::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp5;
 }
 #tensseconds_p6 {
   @extend horizontalSegment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: sixp6;
 }
 #tensseconds_p6::before{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp6;
 }
 #tensseconds_p6::after{
   @extend segment;
-  @extend tenssecondsAnimation;
+  @extend tenssecondsAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp6;
 }
@@ -321,130 +321,130 @@ pointyEndRight {
 // Minutes
 #minutes_p0 {
   @extend horizontalSegment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   animation-name: tenp0;
 }
 #minutes_p0::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp0;
 }
 #minutes_p0::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp0;
 }
 
 #minutes_p1 {
   @extend verticalSegmentLeft;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   animation-name: tenp1;
 }
 #minutes_p1::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp1;
 }
 #minutes_p1::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp1;
 }
 
 #minutes_p2 {
   @extend verticalSegmentRight;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   animation-name: tenp2;
 }
 #minutes_p2::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp2;
 }
 #minutes_p2::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp2;
 }
 
 #minutes_p3 {
   @extend horizontalSegment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp3;
 }
 #minutes_p3::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp3;
 }
 #minutes_p3::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp3;
 }
 
 #minutes_p4 {
   @extend verticalSegmentLeft;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp4;
 }
 #minutes_p4::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp4;
 }
 #minutes_p4::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp4;
 }
 
 #minutes_p5 {
   @extend verticalSegmentRight;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
 #minutes_p5::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp5;
 }
 #minutes_p5::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp5;
 }
 
 #minutes_p6 {
   @extend horizontalSegment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: tenp6;
 }
 #minutes_p6::before{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: tenp6;
 }
 #minutes_p6::after{
   @extend segment;
-  @extend minutesAnimation;
+  @extend minutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: tenp6;
 }
@@ -452,135 +452,135 @@ pointyEndRight {
 // Tens of tensminutes
 #tensminutes_p0 {
   @extend horizontalSegment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   animation-name: sixp0;
 }
 #tensminutes_p0::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp0;
 }
 #tensminutes_p0::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp0;
 }
 
 #tensminutes_p1 {
   @extend verticalSegmentLeft;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   animation-name: sixp1;
 }
 #tensminutes_p1::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp1;
 }
 #tensminutes_p1::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp1;
 }
 
 #tensminutes_p2 {
   @extend verticalSegmentRight;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   animation-name: sixp2;
 }
 #tensminutes_p2::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp2;
 }
 #tensminutes_p2::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp2;
 }
 
 #tensminutes_p3 {
   @extend horizontalSegment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp3;
 }
 #tensminutes_p3::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp3;
 }
 #tensminutes_p3::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp3;
 }
 
 #tensminutes_p4 {
   @extend verticalSegmentLeft;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp4;
 }
 #tensminutes_p4::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp4;
 }
 #tensminutes_p4::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp4;
 }
 
 #tensminutes_p5 {
   @extend verticalSegmentRight;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   margin-top: $segment-width + $segment-height;
   animation-name: sixp5;
 }
 #tensminutes_p5::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp5;
 }
 #tensminutes_p5::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp5;
 }
 
 #tensminutes_p6 {
   @extend horizontalSegment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   margin-top: 2 * $segment-width + 2 * $segment-height;
   animation-name: sixp6;
 }
 #tensminutes_p6::before{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndLeft;
   animation-name: sixp6;
 }
 #tensminutes_p6::after{
   @extend segment;
-  @extend tensminutesAnimation;
+  @extend tensminutesAnimationDuration;
   @extend pointyEndRight;
   animation-name: sixp6;
 }
 
-
+// Centre circles separating minutes and seconds
 $circles-spacing: 10px;
 $circle-diameter: 30px;
 $circle-vertical-space: 20px;

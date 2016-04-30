@@ -14,6 +14,7 @@ $separate-digit-groups: $segment-height * 2;
 // Half the height of the digit. Used to centre vertical position.
 $digit-top-margin: -1 * ($segment-width + 1.5 * $segment-height);
 
+// Element to position clock in centre of page
 .clock {
   position: absolute;
   top: 50%;
@@ -23,6 +24,7 @@ $digit-top-margin: -1 * ($segment-width + 1.5 * $segment-height);
   height: 1px;
 }
 
+// Define each digit
 #seconds {
   margin-top: $digit-top-margin;
   margin-left: $digit-spacing + $digit-width + $separate-digit-groups;
