@@ -22,17 +22,20 @@ segment {
   animation-timing-function: step-end;
 }
 
-// Due to rotating the container for vertical elements, vertical and horizontal
-// directions are swapped.
-verticalSegmentRight {
+_verticalSegment {
   @extend segment;
-  margin-left: 0px;
+  transform-origin: 0% 100%;
+  transform: rotate(90deg);
 }
 
 verticalSegmentLeft {
-  @extend segment;
+  @extend _verticalSegment;
+  margin-left: 0px;
+}
+
+verticalSegmentRight {
+  @extend _verticalSegment;
   margin-left: $segment-width + $segment-height;
-  margin-top: $segment-width + $segment-height;
 }
 
 horizontalSegment {
@@ -80,7 +83,6 @@ pointyEndRight {
 #seconds_p1 {
   @extend verticalSegmentLeft;
   @extend secondsAnimation;
-  margin-left: 0px;
   animation-name: tenp1;
 }
 #seconds_p1::before{
@@ -155,7 +157,7 @@ pointyEndRight {
 #seconds_p5 {
   @extend verticalSegmentRight;
   @extend secondsAnimation;
-  margin-left: $segment-width + $segment-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
 #seconds_p5::before{
@@ -212,7 +214,6 @@ pointyEndRight {
 #tensseconds_p1 {
   @extend verticalSegmentLeft;
   @extend tenssecondsAnimation;
-  margin-left: 0px;
   animation-name: sixp1;
 }
 #tensseconds_p1::before{
@@ -283,8 +284,7 @@ pointyEndRight {
 #tensseconds_p5 {
   @extend verticalSegmentRight;
   @extend tenssecondsAnimation;
-  margin-left: $segment-width + $segment-height;
-
+  margin-top: $segment-width + $segment-height;
   animation-name: sixp5;
 }
 #tensseconds_p5::before{
@@ -340,7 +340,6 @@ pointyEndRight {
 #minutes_p1 {
   @extend verticalSegmentLeft;
   @extend minutesAnimation;
-  margin-left: 0px;
   animation-name: tenp1;
 }
 #minutes_p1::before{
@@ -415,7 +414,7 @@ pointyEndRight {
 #minutes_p5 {
   @extend verticalSegmentRight;
   @extend minutesAnimation;
-  margin-left: $segment-width + $segment-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: tenp5;
 }
 #minutes_p5::before{
@@ -472,7 +471,6 @@ pointyEndRight {
 #tensminutes_p1 {
   @extend verticalSegmentLeft;
   @extend tensminutesAnimation;
-  margin-left: 0px;
   animation-name: sixp1;
 }
 #tensminutes_p1::before{
@@ -547,7 +545,7 @@ pointyEndRight {
 #tensminutes_p5 {
   @extend verticalSegmentRight;
   @extend tensminutesAnimation;
-  margin-left: $segment-width + $segment-height;
+  margin-top: $segment-width + $segment-height;
   animation-name: sixp5;
 }
 #tensminutes_p5::before{
